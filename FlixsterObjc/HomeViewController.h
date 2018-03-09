@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UITableViewDataSource>
 
-@property (nonatomic) NSDictionary *movies;
 
--(void)requestMovie;
+@property (nonatomic) NSArray *movies;
+
+
+-(void)requestMovies;
+
 
 
 

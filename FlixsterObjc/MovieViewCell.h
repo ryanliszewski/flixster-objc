@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MovieViewCell.h
 //  FlixsterObjc
 //
 //  Created by Ryan Liszewski on 3/8/18.
@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MovieViewCell : UITableViewCell
 
-@property (nonatomic) NSDictionary *movies;
-
--(void)requestMovies;
+-(void)bindData:(NSString*)title;
 
 @end
-
